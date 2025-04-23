@@ -11,5 +11,5 @@ public class array_sand1 {
 	
     //macからのコミットテスト
     //macからのコミットテスト2
-	
+	//macからのコミットテスト3
 }
