@@ -1,27 +1,30 @@
 package models;
 
 public class array_sand2 {
-	
-//	int[2] bb = new int[]://コンパイルエラー
-//	int[][] bb = new int[][5];//コンパイルエラー 
+	public static void main(String[] args) {
 
-//	int[][] abc = new int[][]; //コンパイルエラー 
-
+/*コンパイルエラー になる例
+	//	int[2] bb = new int[]:
+	//	int[][] bb = new int[][5];
+	//	int[][] abc = new int[][];
+*/
+		int[][] two =new int[2][2];
+		two[0][0]=0;
+		two[0][1]=1;
+		two[1][0]=2;
+		two[1][1]=3;
+		//mainメソッドないであれば、初期化ブロック{}不要
+	}
 	
-	int[][] abc ={{1},{2}}; //2行3列の二次元配列を作成
-//	
-//     // 各行の列数を後から決定
-//    abc[0] = new int[3]; // 1行目に3列
-//    abc[1] = new int[5]; // 2行目に5列
-//
-//    System.out.println(abc[0].length); // 1（1行目の列数）
-//    System.out.println(abc[1].length); // 3（2行目の列数）
-
-    
-    
-//	aa[0]=1;
-	
-	
-//	bb[0][0]=11;
-	
+	class array_sand_wk{
+		
+		int[][] two =new int[2][2];
+		{
+		two[0][0]=0;
+		two[0][1]=1;
+		two[1][0]=2;
+		two[1][1]=3;
+		}
+		//初期化ブロックがない場合、コンパイルエラー
+	}
 }
