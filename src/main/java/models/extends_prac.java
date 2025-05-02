@@ -12,7 +12,7 @@ class B extends A {
 	String val = "B";
 }
 
-class prac_extends {
+class extends_prac {
 	public static void main(String[] args) {
 		A a = new A();
 		A b = new B();

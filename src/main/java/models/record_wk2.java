@@ -37,5 +37,6 @@ public record record_wk2(String name) {
 	}
 	
 	//引数を受け取らない場合
+	//　→record_wk3クラスで記述。
 
 }
