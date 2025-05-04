@@ -35,6 +35,14 @@ public class extends_prac2 extends B2 {
 	}
 }
 
+class extends_prac23 extends B2 {
+	public static void main(String[] args) {
+
+		System.out.print("main_2");
+
+	}
+}
+
 /*
 動的ディスパッチ（Dynamic Dispatch）:
 オーバーライドされたメソッドの選択が、実行時のオブジェクトの型によって決定される仕組み

@@ -1,10 +1,10 @@
 package models;
 
 //抽象クラス：PracAbstract
-public abstract class PracAbstract {
+public abstract class abstract_Prac {
 	protected String 名前;
 
-	public PracAbstract(String 名前) {
+	public abstract_Prac(String 名前) {
 		this.名前 = 名前;
 	}
 
@@ -26,7 +26,7 @@ public abstract class PracAbstract {
 }
 
 //具象クラス：四角形
- class 四角形 extends PracAbstract {
+ class 四角形 extends abstract_Prac {
 	private double 幅;
 	private double 高さ;
 
@@ -48,7 +48,7 @@ public abstract class PracAbstract {
 }
 
 //具象クラス：円
- class 円 extends PracAbstract {
+ class 円 extends abstract_Prac {
 	private double 半径;
 
 	public 円(String 名前, double 半径) {
@@ -78,11 +78,11 @@ public abstract class PracAbstract {
 		rectangle.情報表示();
 		circle.情報表示();
 
-		PracAbstract[] figures = new PracAbstract[2];
+		abstract_Prac[] figures = new abstract_Prac[2];
 		figures[0] = rectangle;
 		figures[1] = circle;
 
-		for (PracAbstract figure : figures) {
+		for (abstract_Prac figure : figures) {
 			figure.描画する(); // ポリモーフィズム：それぞれの描画処理が実行される
 		}
 	}
